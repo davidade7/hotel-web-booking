@@ -8,18 +8,26 @@
   <title>Hotel Web Booking</title>
 </head>
 <body class="relative h-screen">
-  <nav class="px-14 lg:px-20 pt-8 pb-6 flex justify-between items-center">
+  <nav class="px-20 pt-8 pb-6 flex justify-between lg:items-center">
     <div class="relative">
       <span class="font-Kollektif-bold text-lg pl-2">Hotel.Arc</span>
-      <img src="./build/svg/Subtract.svg" alt="logo" class="absolute -top-[10px] left-0">
+      <img src="./build/svg/Subtract.svg" alt="logo" class="absolute -top-[10px]">
     </div>
-    <div class="flex items-center">
-      <ul class="flex gap-10 font-Kollektif text-lg text-perso-100">
-        <li>Recommended Places</li>
-        <li>About us</li>
-        <li>Contact</li>
-      </ul>
-      <button class="ml-10 bg-perso-300 px-8 py-2 rounded-lg font-Kollektif-bold text-white">Login</button>
+    <div>
+      <div class="lg:hidden sm:flex justify-end pb-8 hover:cursor-pointer" id="burger">
+        <img src="./build/svg/menu.svg" alt="">
+      </div>
+      <div class="hidden lg:flex items-center" id="menu">
+        <ul class="lg:flex sm:text-right lg:gap-10 font-Kollektif text-lg text-perso-100">
+          <li class="sm:pb-2 lg:pb-0">Recommended Places</li>
+          <li class="sm:pb-2 lg:pb-0">About us</li>
+          <li class="sm:pb-2 lg:pb-0">Contact</li>
+        </ul>
+        <div class="flex sm:justify-end">
+          <button class="lg:ml-10 bg-perso-300 px-8 py-2 rounded-lg font-Kollektif-bold text-white">Login</button>
+        </div>
+      </div>
+      
     </div>
   </nav>
   
@@ -87,5 +95,7 @@
       <p class="font-Kollektif text-white m-auto">search</p>
     </div>
   </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>

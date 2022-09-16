@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Kollektif-bold";
+  src: url("../build/fonts/Kollektif-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Kollektif";
+  src: url("../build/fonts/Kollektif.ttf");
+}
+
+@font-face {
+  font-family: "Creattion";
+  src: url("../build/fonts/Creattion-Demo.otf");
+}
+
+body {
+  background-color: #F6F3E9;
+}

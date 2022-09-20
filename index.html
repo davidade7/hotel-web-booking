@@ -8,31 +8,30 @@
   <title>Hotel Web Booking</title>
 </head>
 <body class="relative h-screen">
-  <nav class="px-4 pt-4 pb-4 sm:px-12 sm:pt-8 sm:pb-8 flex justify-between lg:items-center">
+  <nav class="px-4 py-4 sm:px-12 sm:py-8 lg:px-20 flex justify-between lg:items-center">
     <div class="relative pt-2 ">
       <span class="font-Kollektif-bold text-lg pl-2">Hotel.Arc</span>
       <img src="./build/svg/Subtract.svg" alt="logo" class="absolute -top-[2px]">
     </div>
     <div>
-      <div class="lg:hidden flex justify-end pb-4 sm:pb-6 hover:cursor-pointer" id="burger">
+      <div class="md:hidden flex justify-end pb-4 sm:pb-6 hover:cursor-pointer" id="burger">
         <img src="./build/svg/menu.svg" alt="">
       </div>
-      <div class="hidden lg:flex items-center" id="menu">
-        <ul class="lg:flex text-right lg:gap-10 font-Kollektif text-lg text-perso-100">
-          <li class="pb-1 sm:pb-2 lg:pb-0">Recommended Places</li>
-          <li class="pb-1 sm:pb-2 lg:pb-0">About us</li>
-          <li class="pb-1 sm:pb-2 lg:pb-0">Contact</li>
+      <div class="hidden md:flex items-center" id="menu">
+        <ul class="md:flex text-right md:gap-10 font-Kollektif text-lg text-perso-100">
+          <li class="pb-1 sm:pb-2 md:pb-0">Recommended Places</li>
+          <li class="pb-1 sm:pb-2 md:pb-0">About us</li>
+          <li class="pb-1 sm:pb-2 md:pb-0">Contact</li>
         </ul>
         <div class="flex justify-end">
-          <button class="lg:ml-10 bg-perso-300 px-8 py-2 rounded-lg font-Kollektif-bold text-white">Login</button>
+          <button class="md:ml-10 bg-perso-300 px-8 py-2 rounded-lg font-Kollektif-bold text-white">Login</button>
         </div>
       </div>
-      
     </div>
   </nav>
   
-  <main class="pl-14 lg:pl-20 relative h-[calc(100vh-96px-206px)] xl:bg-contain bg-no-repeat bg-right" style="background-image: url('./build/img/etienne-beauregard.png')">
-    <h1 class="font-Kollektif-bold text-perso-100 text-5xl xl:text-6xl 2xl:text-7xl w-5/12 pt-20 xl:pt-28 2xl:pt-36">Hotel for <span class="font-Creattion text-perso-400 text-7xl xl:text-8xl leading-3 lg:leading-3 xl:leading-3">memorable</span> moments rich in emotions</h1>
+  <main class="px-4 md:pl-14 lg:pl-20 relative h-[calc(100vh-96px-206px)] xl:bg-contain bg-no-repeat bg-right" style="background-image: url('./build/img/etienne-beauregard.png')">
+    <h1 class="font-Kollektif-bold text-perso-100 text-4xl sm:text-5xl xl:text-6xl 2xl:text-7xl text-center md:text-left max-w-md sm:max-w-xl mx-auto md:mx-0 md:w-5/12 pt-4 sm:pt-0 md:pt-20 xl:pt-28 2xl:pt-36">Hotel for <span class="font-Creattion text-perso-400 text-7xl xl:text-8xl leading-3 lg:leading-3 xl:leading-3">memorable</span> moments rich in emotions</h1>
     <p class="font-Kollektif text-xl text-perso-200 w-3/12 xl:w-4/12 pt-6 pb-9">We have <span class="text-perso-300">459</span> rooms spread throuout Indonesia with room standards equivalent to 5 star hotels.</p>
     <div class="flex items-center drop-shadow-md">
       <div class="w-[64px] h-[64px] bg-white rounded-full flex justify-center items-center z-10 drop-shadow-xl hover:cursor-pointer">
@@ -57,42 +56,51 @@
     </div>
   </main>
 
-  <div class="bg-white flex justify-between items-center absolute bottom-0 right-0 px-14 lg:px-20 py-12 rounded-tl-[100px] w-[calc(100%-3.5rem)] lg:w-[calc(100%-5rem)] font-Kollektif text-lg text-perso-200">
-    <div>
+
+  <div class="bg-white md:flex md:justify-between md:items-center relative lg:absolute lg:bottom-0 lg:right-0  p-4 sm:px-12 sm:py-8 lg:px-20 lg:py-12 lg:rounded-tl-[100px] lg:w-[calc(100%-5rem)] font-Kollektif text-base lg:text-lg text-perso-200">
+    <div class="pb-4 md:pb-0">
       <div class="flex">
         <img src="./build/svg/Pin_fill.svg" alt="location">
         <p>Location</p>
       </div>
-      <p class="font-Kollektif-bold text-2xl text-perso-100 pt-4 pb-1">Jammu & Kashmir</p>
-      <p class="hover:cursor-pointer">Jammu District</p>
+      <div class="flex items-center md:block pt-1">
+        <p class="font-Kollektif-bold text-xl lg:text-2xl text-perso-100 mr-2 md:mr-0 md:pt-4 md:pb-1">Jammu & Kashmir</p>
+        <p class="hover:cursor-pointer">Jammu District</p>
+      </div>
     </div>
-    <div>
+    <div class="pb-4 md:pb-0">
       <div class="flex">
         <img src="./build/svg/User_fill.svg" alt="location">
         <p >Guests</p>
       </div>
-      <p class="font-Kollektif-bold text-2xl text-perso-100 pt-4 pb-1">3 Persons</p>
-      <p class="hover:cursor-pointer">2 Adults, 1 Child</p>
+      <div class="flex items-center md:block pt-1">
+        <p class="font-Kollektif-bold text-xl lg:text-2xl text-perso-100 mr-2 md:mr-0 md:pt-4 md:pb-1">3 Persons</p>
+        <p class="hover:cursor-pointer">2 Adults, 1 Child</p>
+      </div>
     </div>
-    <div>
+    <div class="pb-4 md:pb-0">
       <div class="flex">
         <img src="./build/svg/Check-in.svg" alt="location">
         <p>Check-in</p>
       </div>
-      <p class="font-Kollektif-bold text-2xl text-perso-100 pt-4 pb-1">24 July 2022</p>
-      <p class="hover:cursor-pointer">Select date</p>
+      <div class="flex items-center md:block pt-1">
+        <p class="font-Kollektif-bold text-xl lg:text-2xl text-perso-100 mr-2 md:mr-0 md:pt-4 md:pb-1">24 July 2022</p>
+        <p class="hover:cursor-pointer">Select date</p>
+      </div>
     </div>
-    <div>
+    <div class="pb-4 md:pb-0">
       <div class="flex">
         <img src="./build/svg/Check-out.svg" alt="location">
         <p>Check-out</p>
       </div>
-      <p class="font-Kollektif-bold text-2xl text-perso-100 pt-4 pb-1">28 July 2022</p>
-      <p class="hover:cursor-pointer">Select date</p>
+      <div class="flex items-center md:block pt-1">
+        <p class="font-Kollektif-bold text-xl lg:text-2xl text-perso-100 mr-2 md:mr-0 md:pt-4 md:pb-1">28 July 2022</p>
+        <p class="hover:cursor-pointer">Select date</p>
+      </div>
     </div>
-    <div class="bg-perso-300 p-6 rounded-xl hover:cursor-pointer">
-      <img class="m-auto" src="./build/svg/Search.svg" alt="search">
-      <p class="font-Kollektif text-white m-auto">search</p>
+    <div class="bg-perso-300 flex justify-center items-center w-fit mx-auto md:mx-0 px-4 py-2 md:block lg:p-6 rounded-xl hover:cursor-pointer">
+      <img class="md:m-auto mr-2" src="./build/svg/Search.svg" alt="search">
+      <p class="font-Kollektif text-white md:m-auto">search</p>
     </div>
   </div>
 
